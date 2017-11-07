@@ -847,6 +847,7 @@ $width = 300px
 
 .vdp-datepicker__calendar
     position absolute
+    border-radius 5px
     z-index 100
     background white
     width $width
