@@ -851,10 +851,11 @@ $width = 300px
     z-index 100
     background white
     width $width
-    border 1px solid #ccc
+    border 1px solid #f00
     header
         display block
         line-height 40px
+        background #f00
         span
             display inline-block
             text-align center
