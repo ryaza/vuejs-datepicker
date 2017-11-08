@@ -851,7 +851,7 @@ $width = 300px
     z-index 100
     background white
     width $width
-    border 1px solid #ссс
+    border 1px solid #ccc
     header
         display block
         line-height 40px
@@ -894,13 +894,15 @@ $width = 300px
             cursor pointer
             &:hover
                 background #eee
-        .prev:not(.disabled)
-          &:hover
-            border-radius 15px 0 0 0
-        .next:not(.disabled)
-          &:hover
-            border-radius 0 15px 0 0
 
+        .prev:not(.disabled)
+            &:hover
+              border-radius 15px 0 0 0
+        .next:not(.disabled)
+            &:hover
+              border-radius 0 15px 0 0
+        .up:not(.disabled)
+          text-decoration underline
     .disabled
         color #ddd
         cursor default
@@ -945,6 +947,8 @@ $width = 300px
             cursor inherit
             &:hover
                 background inherit
+                background #008942
+                color #fff
 
     .month,
     .year
