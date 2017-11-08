@@ -851,11 +851,10 @@ $width = 300px
     z-index 100
     background white
     width $width
-    border 1px solid #f00
+    border 1px solid #ссс
     header
         display block
         line-height 40px
-        background #f00
         span
             display inline-block
             text-align center
@@ -895,6 +894,12 @@ $width = 300px
             cursor pointer
             &:hover
                 background #eee
+        .prev:not(.disabled)
+          &:hover
+            border-radius 15px 0 0 0
+        .next:not(.disabled)
+          &:hover
+            border-radius 0 15px 0 0
 
     .disabled
         color #ddd
@@ -918,13 +923,13 @@ $width = 300px
         &:not(.blank):not(.disabled).year
             cursor pointer
             &:hover
-                border 1px solid #4bd
+                border 1px solid #008942
         &.selected
-            background #4bd
+            background #008942
             &:hover
-                background #4bd
+                background #008942
             &.highlighted
-                background #4bd
+                background #008942
         &.highlighted
             background #cae5ed
         &.grey
